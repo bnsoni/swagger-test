@@ -1,0 +1,91 @@
+{
+   "swagger": "2.0",
+   "info": {
+      "title": "IBL API",
+      "description": "IBL",
+      "version": "6.3.1",
+      "contact": {
+         "email": "admin@mentor.iblai.tech"
+      }
+   },
+   "host": "web.mentor.iblai.tech",
+   "basePath": "/wp-json",
+   "tags": [],
+   "schemes": [
+      "https",
+      "http"
+   ],
+   "paths": {
+      "/api/ibl/v1/users": {
+         "post": {
+            "tags": [
+               "users"
+            ],
+            "summary": "",
+            "description": "",
+            "consumes": [
+               "application/x-www-form-urlencoded",
+               "multipart/form-data"
+            ],
+            "produces": [
+               "application/json"
+            ],
+            "parameters": [],
+            "security": [
+               {
+                  "basic": []
+               }
+            ],
+            "responses": {
+               "200": {
+                  "description": "OK"
+               },
+               "400": {
+                  "description": "Bad Request"
+               },
+               "404": {
+                  "description": "Not Found"
+               }
+            }
+         }
+      },
+      "/api/ibl/v1/user/update": {
+         "post": {
+            "tags": [
+               "user"
+            ],
+            "summary": "",
+            "description": "",
+            "consumes": [
+               "application/x-www-form-urlencoded",
+               "multipart/form-data"
+            ],
+            "produces": [
+               "application/json"
+            ],
+            "parameters": [],
+            "security": [
+               {
+                  "basic": []
+               }
+            ],
+            "responses": {
+               "200": {
+                  "description": "OK"
+               },
+               "400": {
+                  "description": "Bad Request"
+               },
+               "404": {
+                  "description": "Not Found"
+               }
+            }
+         }
+      }
+   },
+   "securityDefinitions": {
+      "basic": {
+         "type": "basic"
+      }
+   }
+}
